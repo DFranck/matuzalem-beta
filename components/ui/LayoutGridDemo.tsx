@@ -3,10 +3,10 @@ import { LayoutGrid } from "../ui/layout-grid";
 
 export function LayoutGridDemo() {
   return (
-    <section className="h-screen py-20 w-full relative">
+    <div className="h-screen py-20 w-full relative">
       <h2 className="text-5xl font-bold text-center">Problemes?</h2>
       <LayoutGrid cards={cards} />
-    </section>
+    </div>
   );
 }
 

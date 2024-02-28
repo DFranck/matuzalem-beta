@@ -1,11 +1,10 @@
 import { Prisma, PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
-
 import { SignupSchema } from "@/lib/schemas";
 import bcrypt from "bcrypt";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function signup(
+const prisma = new PrismaClient();
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
